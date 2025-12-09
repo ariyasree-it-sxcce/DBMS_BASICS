@@ -1,0 +1,63 @@
+Introduction:
+    o Assume There is a Country, the king of the country needscollection of  datas
+        having the poor people list based on different categories:
+        > state wise
+        > district wise
+        > religion wise
+        > income wise
+        so it is hard to document it on paper. Inorder to manage those datas by categories we use databases.
+        Hence databases help manage categorized data
+
+    o The system that is required to manage those databases are called DBMS[Data Base Management System]
+    
+Types of Databases:
+    o Relational Database
+    o NoSQL Database
+    o Hierarchical Database
+    o Network Database
+
+Introducing SQL:
+    
+                                                SQL
+        DataBase Management System ------------------------------- Database
+
+    o SQL is a language that is used to send requests to access data from Database by DataBase Management System
+    o SQL is used to communicate with relational databases through the DBMS.
+    O SQL is common to all RDBMS[Relational DataBase Management System]
+
+Types of Relational Database Management System[RDBMS]:
+    o Oracle
+    o MySQL
+    o SQL Server
+    o PostgreSQL
+
+Types of Data:
+
+    o Structured Data
+    o Unstructured Data
+    o Semi-Structured Data
+    |
+    |
+    > Structured Data:
+        Has defined Structures
+        o Ex: Text,Date,Name
+    > Unstructured Data: 
+        Different type of Structures like Reels,Comments,Posts,Likes
+        o Ex: Social Media Platform like Facebook,Pinterest,Youtube
+    > Semi-Structured Data
+        o Structured Data + Unstructured Data 
+        o Ex: Email 
+               |
+               |
+               |-----> Sender:__________     ---------|
+               |-----> Receiver:________              |----> Structured Data -------
+               |-----> Date:____________     ---------|                             |
+               |                                                                    |
+               |                                                   +                |---> Semi-Structured Data
+               |-----> Body: -----------     ---------|                             |
+                             -----------              |                             |
+                             -----------              |                             |
+               |-----> Attachments:                   |----> Unstructured Data------
+                        Photos                        |
+                        Videos                        |
+                        Links               ----------|
