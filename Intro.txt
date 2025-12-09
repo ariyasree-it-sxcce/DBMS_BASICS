@@ -1,5 +1,5 @@
 Introduction:
-    o Assume There is a Country, the king of the country needscollection of  datas
+    o Assume There is a Country, the king of the country needs collection of  data
         having the poor people list based on different categories:
         > state wise
         > district wise
@@ -21,6 +21,7 @@ Introducing SQL:
                                                 SQL
         DataBase Management System ------------------------------- Database
 
+    o Structured Query Language designed for Relational databases
     o SQL is a language that is used to send requests to access data from Database by DataBase Management System
     o SQL is used to communicate with relational databases through the DBMS.
     O SQL is common to all RDBMS[Relational DataBase Management System]
@@ -61,3 +62,13 @@ Types of Data:
                         Photos                        |
                         Videos                        |
                         Links               ----------|
+
+Relational and Non-Relational Database:
+    |
+    |
+    Relational Database:
+        > It is Structured Database[Table Format] for organization of data
+        > It uses SQL [Structured Query Language] to work with
+    Non-Relational Database
+        > Here we don't use SQL that is it uses NoSQL
+        > Data will be in the form Graph,Key-Value Pair,Column,Row,Documents.
