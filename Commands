@@ -1,0 +1,53 @@
+SQL Commands:
+    o DDL 
+    o DML
+    o DCL
+    o DQL
+    o TCL
+
+     -----------------------------------------------------------------------------------------------
+     > DDL Commands ---> Data Definition Language
+        > Used to define,modify and delete database structures like table,column,schemas
+            1. Create
+            2. Alter 
+            3. Drop
+            4. Truncate
+            
+             ----> 1. Create
+                      Used to create a new schema, create a new table, or define columns and their  data types.
+
+                 Syntax1: create schema schema_name
+                 Example: create schema dummy
+
+                 Syntax2: create table table_name(
+                            var_name1 data_type,
+                            var_name2 data_type,
+                          )
+                 Example: create table teacher(
+                            Name varchar(100),
+                            Age int,
+                            Degree varchar(100)
+                          )
+             ----> 2. Alter
+                       Used to modify an existing table.
+                       
+                 Syntax1: alter table table_name add column var_name_to_be_added data_type
+                 Example: alter table teacher add column Department varchar(100)
+
+                 Syntax2: alter table table_name change var_name_to_be_changed new_name data_type
+                 Example: alter table teacher change Degree Deg varchar(100)
+
+             ----> 3. Drop
+                       Used to delete a table completely from the database.
+              
+                 Syntax:  drop table table_to_be_deleted
+                 Example: drop table teacher
+            
+             ----> 4. Truncate 
+                        Used to delete all data inside a table, but keeps the table structure unchanged.
+
+                 Syntax:  truncate table table_name
+                 Example: truncate table teacher 
+
+     -----------------------------------------------------------------------------------------------
+     >DML Commands ---> 
