@@ -1,2 +1,0 @@
-
-SELECT * FROM teacher LIMIT 100

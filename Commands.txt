@@ -50,4 +50,40 @@ SQL Commands:
                  Example: truncate table teacher 
 
      -----------------------------------------------------------------------------------------------
-     >DML Commands ---> 
+     >DML Commands ---> Data Manipulation Language
+                   ---> insert,update,deleting data
+
+                   >INSERT
+                    Syntax:  INSERT INTO table_name VALUES(DATA1,DATA2,DATA3)
+                    Example: INSERT INTO student VALUES("ARIYA",19,"IT")
+
+                   >UPDATE
+                    Syntax1:  UPDATE table_name SET variable_name=new_value
+                    Example:  UPDATE student SET Age=23
+                               > It updates all old value to new value
+
+                    Syntax2:  UPDATE table_name SET variable_name=new_value WHERE variable_name=value_to_be_updated
+                    Example1: UPDATE student SET Age=18 WHERE Age=19
+                    Example2: UPDATE student SET Age=18 WHERE Name="John"
+                               > It update only the specified position to be updated 
+
+                   >DELETE
+                    Syntax1:  DELETE FROM table_name
+                    Example1: DELETE FROM student 
+                               > It delete all data from student table 
+
+                    Syntax2:  DELETE FROM table_name WHERE variable_name=value
+                    Example2: DELETE FROM student WHERE Name="ARIYA"
+
+     >DQL Commands ---> Data Query Language
+                   ---> use select command for retrieve data and view
+
+                   Example1: SELECT * FROM student 
+                             >Display all contents of Table.
+                             > '*' specifies all.
+                    
+                   Example2: SELECT Name FROM student
+                             >Display only the Names from the table.
+                    
+                   Example3: SELECT Name,Age FROM student
+                             >Display Name as well as Age from the table.
