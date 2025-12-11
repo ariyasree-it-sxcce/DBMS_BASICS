@@ -1,0 +1,48 @@
+SQL Practice Questions:
+
+ >  1. How do you make a table in a database?
+
+ > 2. How do you insert below records?
+    . Customer ID: 1
+    - Name: John Doe
+    - Address: 392 Sunset Blvd.
+    - City: New York
+    - State: NT
+    - ZIP Code: 10059
+
+    . Customer ID: 2
+    - Name: Mary Smith
+    - Address: 6900 Main St.
+    - City: San Francisco
+    - State: CA
+    - ZIP Code: 94032
+
+    3. Customer ID: 3
+    - Name: Richard Newman
+    - Address: 2040 Riverside Rd.
+    - City: San Diego
+    - State: CA
+    - ZIP Code: 92010
+
+    4. Customer ID: 4
+    - Name: Cathy Cook
+    - Address: 4010 Speedway
+    - City: Tucson
+    - State: AZ
+    - ZIP Code: 85719
+
+ >3.How can we change the 'customer_address' column to just 'address'?
+
+ >4.How do you add a new column called 'mobile_number'?
+
+ > 5.How can you update the phone number for 'Mary Smith' to '82206-1234'?
+
+ > 6.How can you delete the record where the ZIP Code is "92010"?
+
+ > 7.How can you select distinct data where the user is from a state ="CA"?
+
+ > 8.How do you print customer IDs who are greater than 3?
+
+ > 9.How do you delete the State column? 
+
+ >10.How do you truncate a table?
