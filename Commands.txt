@@ -4,7 +4,6 @@ SQL Commands:
     o DCL
     o DQL
     o TCL
-
      -----------------------------------------------------------------------------------------------
      > DDL Commands ---> Data Definition Language
         > Used to define,modify and delete database structures like table,column,schemas
