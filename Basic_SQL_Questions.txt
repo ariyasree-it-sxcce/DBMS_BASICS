@@ -1,5 +1,5 @@
 SQL Practice Questions:
-
+ ---------------------- 
  >  1. How do you make a table in a database?
 
  > 2. How do you insert below records?

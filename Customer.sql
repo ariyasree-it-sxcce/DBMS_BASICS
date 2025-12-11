@@ -42,6 +42,7 @@ SELECT * FROM Customer WHERE Customer_id>2
 
 --Exercise 9:
 ALTER TABLE Customer DROP COLUMN State
+SELECT * FROM Customer
 
 --Exercise 10:
 TRUNCATE Table Customer
