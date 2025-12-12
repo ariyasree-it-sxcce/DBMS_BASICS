@@ -1,4 +1,5 @@
 Introduction:
+
     o Assume There is a Country, the king of the country needs collection of  data
         having the poor people list based on different categories:
         > state wise
