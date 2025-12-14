@@ -105,3 +105,14 @@ FROM employee
 GROUP BY Department 
 ORDER BY AVG(Salary) DESC
 LIMIT 1;
+
+--Whenever a condition is to be used for aggregate function in group by  there you should use "Having Clause".
+SELECT AVG(Salary),Department FROM employee GROUP BY Department HAVING AVG(Salary) <60000;
+
+/* 
+FIND DEPARTMENTS HAVE MORE THAN TWO EMPLOYEES : 
+*/
+SELECT COUNT(Emp_name),Department FROM employee GROUP BY Department HAVING COUNT(Emp_id) > 2;
+
+/* FIND DEPARTMENTS WITH AN AVERAGE SALARY GREATER THAN $55,000 */
+SELECT AVG(Salary),Department FROM employee GROUP BY Department HAVING AVG(Salary) >55000;
