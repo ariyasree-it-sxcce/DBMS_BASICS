@@ -1,4 +1,4 @@
---Group By & Order By
+--Group By & Order By:
 /* 
 
 ORDER BY: is used to arrange or sort the result in ascending or descending order, and it does not combine or summarize any data — it only changes the order in which rows appear.

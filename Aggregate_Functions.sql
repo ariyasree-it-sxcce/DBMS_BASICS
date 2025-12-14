@@ -24,6 +24,12 @@ INSERT INTO pupil VALUES("Shruthi",40,"AI/DS");
 INSERT INTO pupil VALUES("Charu",60,"IT");
 INSERT INTO pupil VALUES("Anusha",80,"MECH");
 INSERT INTO pupil VALUES("SARA",99,"CSE");
+INSERT INTO pupil VALUES("CHARU",67,"ECE")
+
+SELECT * FROM pupil WHERE Name="Charu"
+
+SELECT * FROM pupil;
+
 
 UPDATE pupil SET Mark=80 WHERE Department="MECH";
 
