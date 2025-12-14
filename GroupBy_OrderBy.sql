@@ -1,10 +1,12 @@
 --Group By & Order By
 /* 
+
 ORDER BY: is used to arrange or sort the result in ascending or descending order, and it does not combine or summarize any data — it only changes the order in which rows appear.
 
 GROUP BY: is used to group rows that have the same value in a specified column, and it is mainly used with aggregate functions like COUNT, SUM, AVG, MAX, and MIN to produce summary results for each group.
 
 When both are used together, GROUP BY groups the data first, and then ORDER BY sorts the grouped result. 
+
 */
 
 --EXERCISE:1
