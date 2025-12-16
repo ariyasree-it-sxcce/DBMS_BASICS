@@ -6,7 +6,7 @@ Types of Joins
  > RIGHT JOIN
  > FULL JOIN
 
------> CROSS JOIN :
+-----> CROSS JOIN : 
 
 -----> INNER JOIN :
          >Only common data from both tables is shown.
@@ -20,10 +20,27 @@ Types of Joins
 
 -----> LEFT JOIN :
          > LEFT JOIN: all left rows + matching right rows
+         > IN RESULT TABLE IT SHOWS THE DATA ACCORDING TO THE CONDITION[PERFECT MATCHES] AS WELL AS EXTRA ROWS IN LEFT TABLE 
+         > If:
+            LEFT table IDs: 1, 2, 3
+            RIGHT table IDs: 2, 3
 
+            LEFT JOIN result:
+            1 → NULL
+            2 → match
+            3 → match
+
+-----> RIGHT JOIN :
+         > RIGHT JOIN: all right + common from left
+         > If:
+            LEFT table IDs: 1, 2
+            RIGHT table IDs: 1, 2, 3
+
+            RIGHT JOIN result:
+            1 → match
+            2 → match
+            3 → NULL (no match in left)
 */
-
-
 CREATE SCHEMA Food;
 
 USE food;
@@ -55,7 +72,7 @@ VALUES
     (3,4,'2025-08-20'),
     (4,1,'2025-08-21'),
     (5,4,'2025-08-21'),
-    (6,NULL,'2025-08-25'),
+    (6,5,'2025-08-25'),
     (7,NULL,'2025-08-30');
 
 SELECT * FROM restaurant;
@@ -88,13 +105,13 @@ SELECT * FROM orders;
     -->>> Using JOIN:
          -- 1)
           SELECT restaurant.id,restaurant.name,restaurant.location,orders.order_id,orders.order_date
-          FROM restaurant
-          JOIN orders
-          ON restaurant.id=orders.restaurant_id
+          FROM restaurant ---LEFT TABLE
+          JOIN orders ---RIGHT TABLE
+          ON restaurant.id=orders.restaurant_id ---condition
 
-         -- 2) Using JOIN AND 
+         -- 2) Using JOIN AND Creatimg alias name
          SELECT o.order_id,r.name,r.location,o.order_date
-         FROM restaurant AS r
+         FROM restaurant AS r --- alias name 
          JOIN orders AS o
          ON r.id=o.order_id
 
@@ -111,4 +128,19 @@ SELECT * FROM orders;
          ON r.id=o.restaurant_id
          ORDER BY r.id
 
-    
+--LEFT JOIN
+     
+     -->> Using LEFT JOIN
+         SELECT r.id,r.name,r.location,o.order_id,o.order_date
+         FROM restaurant AS r
+         LEFT JOIN orders AS o
+         ON r.id = o.restaurant_id
+         ORDER BY restaurant_id
+
+--RIGHT JOIN
+     -->> Using RIGHT JOIN
+         SELECT r.name,r.location,o.order_date
+         FROM restaurant AS r
+         RIGHT JOIN orders AS o
+         ON r.id=o.restaurant_id
+         
