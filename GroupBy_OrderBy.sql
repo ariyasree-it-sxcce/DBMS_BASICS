@@ -61,7 +61,7 @@ When both are used together, GROUP BY groups the data first, and then ORDER BY s
 
 use dummy;
 
-Create TABLE Employee(
+Create TABLE Employeee(
    Emp_id INT,
    Emp_name VARCHAR(20),
    Last_name VARCHAR(20),
@@ -69,7 +69,7 @@ Create TABLE Employee(
    Salary INT
 );
 
-SELECT * FROM employee;
+SELECT * FROM employeee;
 
 INSERT INTO employee (Emp_id,Emp_name,Last_name,Department,Salary)
    VALUES
