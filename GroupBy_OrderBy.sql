@@ -97,7 +97,7 @@ SELECT COUNT(*),Department from employee GROUP BY Department;
 SELECT AVG(Salary),Department FROM employee GROUP BY Department ORDER BY Department ASC
 
 --ORDER THE DEPARTMENT WITH THE HIGHEST AVERAGE SALARY:
-SELECT Department,AVG(Salary) FROM employee GROUP BY Department ORDER BY AVG(Salary) DESC
+SELECT Department,AVG(Salary) FROM employee GROUP BY Department ORDER BY AVG(Salary) DESC 
 
 --FIND THE DEPARTMENT WITH THE HIGHEST AVERAGE SALARY:
 SELECT Department,AVG(Salary) 
