@@ -10,6 +10,7 @@ Aggregate Functions:
  
  */
 
+
 USE dummy;
 
 CREATE TABLE Pupil(
@@ -65,4 +66,4 @@ SELECT AVG(Mark) as Average_Mark FROM pupil WHERE Department="IT"
 SELECT COUNT(Name) FROM pupil;
 SELECT COUNT(Name) as Names FROM pupil;
 SELECT COUNT(Name) FROM pupil WHERE Department="CSE";
-SELECT COUNT(Name) AS NAME FROM pupil WHERE `Department`="IT"; 
+SELECT COUNT(Name) AS NAME FROM pupil WHERE `Department`="IT";

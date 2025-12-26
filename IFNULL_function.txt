@@ -1,0 +1,79 @@
+1]IFNULL( something , NULL ) 
+ 
+ > IFNULL() is a MYSQL function
+ > How it works?
+    - if something has a value it return it
+    - if something is NULL , it returns the value after comma.
+
+2] DISTINCT ---> removes duplicates
+
+
+Example : Leetcode Problem : 176. Second Highest Salary
+
+    Table: Employee
+    +-------------+------+
+    | Column Name | Type |
+    +-------------+------+
+    | id          | int  |
+    | salary      | int  |
+    +-------------+------+
+id is the primary key (column with unique values) for this table.
+Each row of this table contains information about the salary of an employee.
+
+Write a solution to find the second highest distinct salary from the Employee table. If there is no second highest salary, return null (return None in Pandas).
+
+The result format is in the following example.
+
+Example 1:
+
+Input: 
+    Employee table:
+    +----+--------+
+    | id | salary |
+    +----+--------+
+    | 1  | 100    |
+    | 2  | 200    |
+    | 3  | 300    |
+    +----+--------+
+Output: 
+    +---------------------+
+    | SecondHighestSalary |
+    +---------------------+
+    | 200                 |
+    +---------------------+
+Example 2:
+
+Input: 
+    Employee table:
+    +----+--------+
+    | id | salary |
+    +----+--------+
+    | 1  | 100    |
+    +----+--------+
+Output: 
+    +---------------------+
+    | SecondHighestSalary |
+    +---------------------+
+    | null                |
+    +---------------------+
+---------
+Solution:
+---------
+
+        SELECT 
+    --> IFNULL(                              
+    |   SELECT DISTINCT salary AS SecondHighestSalary ------
+    |   FROM Employee                                       | ---> [something],returns if second salary != NULL 
+    |   ORDER BY salary DESC                                |
+    |   LIMIT 1 OFFSET 1,                             ------
+    --->NULL
+    |   )
+    --->AS SecondHighestSalary;
+
+ >SUMMARY:
+    -Remove duplicate salaries [DISTINCT]
+    -Sort salaries from highest to lowest [ORDER BY salary DESC ]
+    -Skip the highest  -----  
+                           |--> [LIMIT 1 OFFSET 1]
+    -Pick the next one -----
+    -If it doesn’t exist, return NULL
