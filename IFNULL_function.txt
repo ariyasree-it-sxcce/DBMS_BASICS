@@ -62,10 +62,10 @@ Solution:
 
         SELECT 
     --> IFNULL(                              
-    |   SELECT DISTINCT salary AS SecondHighestSalary ------
-    |   FROM Employee                                       | ---> [something],returns if second salary != NULL 
-    |   ORDER BY salary DESC                                |
-    |   LIMIT 1 OFFSET 1,                             ------
+    |   (SELECT DISTINCT salary AS SecondHighestSalary ------
+    |   FROM Employee                                       | --->   [something],returns if second salary != NULL   
+    |   ORDER BY salary DESC                                |       and most importantly sub-query must be enclosed inside parenthesis
+    |   LIMIT 1 OFFSET 1),                             ------
     --->NULL
     |   )
     --->AS SecondHighestSalary;
