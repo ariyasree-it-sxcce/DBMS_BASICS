@@ -1,0 +1,5 @@
+1. What are the databases are there? 
+
+
+2.Why this much of databases invented?
+3.What is the use of that? In real world where that all databases are using?

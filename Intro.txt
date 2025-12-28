@@ -30,7 +30,7 @@ Introducing SQL:
 Types of Relational Database Management System[RDBMS]:
     o Oracle
     o MySQL
-    o SQL Server
+    o MS SQL Server
     o PostgreSQL
 
 Types of Data:
@@ -48,7 +48,7 @@ Types of Data:
         o Ex: Social Media Platform like Facebook,Pinterest,Youtube
     > Semi-Structured Data
         o Structured Data + Unstructured Data 
-        o Ex: Email 
+        o Ex: Email,WhatsApp
                |
                |
                |-----> Sender:__________     ---------|
